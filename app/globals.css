@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-marble: #f8f7f3;
+		--color-charcoal: #1b1b1b;
+		--color-sage: #93a79e;
+		--color-gold: #c7a97e;
+
+		--background: 0 0% 100%;
+		--foreground: 240 10% 3.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 240 10% 3.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 240 10% 3.9%;
+		--primary: 240 5.9% 10%;
+		--primary-foreground: 0 0% 98%;
+		--secondary: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
+		--muted: 240 4.8% 95.9%;
+		--muted-foreground: 240 3.8% 46.1%;
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 240 5.9% 90%;
+		--input: 240 5.9% 90%;
+		--ring: 240 10% 3.9%;
+		--radius: 0rem;
+	}
+
+
+
+	body {
+		@apply bg-[var(--color-marble)] text-[var(--color-charcoal)];
+		font-family: "Space Mono", monospace;
+		font-size: 14px;
+		line-height: 1.6;
+		letter-spacing: 0.01em;
+	}
+
+	h1 {
+		font-family: "Cormorant Garamond", serif;
+		font-size: 96px;
+		line-height: 1.1;
+		font-weight: 300;
+		letter-spacing: -0.02em;
+	}
+
+	h2 {
+		font-family: "Cormorant Garamond", serif;
+		font-size: 64px;
+		line-height: 1.15;
+		font-weight: 400;
+		letter-spacing: -0.01em;
+	}
+
+	h3 {
+		font-family: "Cormorant Garamond", serif;
+		font-size: 48px;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+
+	h4 {
+		font-family: "Space Mono", monospace;
+		font-size: 12px;
+		line-height: 1.4;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+	}
+
+	p {
+		font-family: "Space Mono", monospace;
+		font-size: 14px;
+		line-height: 1.8;
+	}
+
+	small {
+		font-family: "Space Mono", monospace;
+		font-size: 11px;
+		line-height: 1.5;
+		letter-spacing: 0.05em;
+	}
+}
