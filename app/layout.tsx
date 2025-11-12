@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import type { ReactNode } from "react";
 import { Space_Mono, Cormorant_Garamond } from "next/font/google";
 
 const spaceMono = Space_Mono({
@@ -18,7 +18,7 @@ export const metadata = {
 	title: "Cafechino",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html
 			lang="en"
